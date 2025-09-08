@@ -1,14 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import LandingPage from '@/components/LandingPage';
+import MedplumLogin from '@/components/MedplumLogin';
+import { isAuthenticated } from '@/lib/medplum';
 
 const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
+  const [showLogin, setShowLogin] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(isAuthenticated());
+
+  const handleLoginSuccess = () => {
+    setIsLoggedIn(true);
+    setShowLogin(false);
+  };
+
+  if (showLogin) {
+    return <MedplumLogin onLoginSuccess={handleLoginSuccess} />;
+  }
+
+  return <LandingPage />;
 };
 
 export default Index;
