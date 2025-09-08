@@ -11,8 +11,10 @@ import {
   Phone,
   Mail,
   MapPin,
-  CheckCircle
+  CheckCircle,
+  LogIn
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import doctorImage from "@/assets/doctor-kitchen-consultation.jpg";
 
 const DedicatedHealthLanding = () => {
@@ -31,6 +33,12 @@ const DedicatedHealthLanding = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
+            <Link to="/auth">
+              <Button variant="outline" className="mr-3">
+                <LogIn className="mr-2 h-4 w-4" />
+                Patient Portal
+              </Button>
+            </Link>
             <Button className="bg-primary hover:bg-primary/90">
               Schedule Consultation
             </Button>
