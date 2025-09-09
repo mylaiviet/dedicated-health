@@ -33,12 +33,12 @@ const DedicatedHealthLanding = () => {
             <a href="#about" className="text-foreground hover:text-primary transition-colors">About</a>
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
-            <Link to="/auth">
+            <a href="https://hipaa-portal.vercel.app/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="mr-3">
                 <LogIn className="mr-2 h-4 w-4" />
                 Patient Portal
               </Button>
-            </Link>
+            </a>
             <Button className="bg-primary hover:bg-primary/90">
               Schedule Consultation
             </Button>
