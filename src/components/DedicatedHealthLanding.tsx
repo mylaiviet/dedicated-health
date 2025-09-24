@@ -39,9 +39,11 @@ const DedicatedHealthLanding = () => {
                 Patient Portal
               </Button>
             </a>
-            <Button className="bg-primary hover:bg-primary/90">
-              Schedule Consultation
-            </Button>
+            <a href="https://outlook.office.com/bookwithme/user/0be1f2c1fa2b4c2dae14f69885cc536c@liberatehc.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-primary hover:bg-primary/90">
+                Schedule Consultation
+              </Button>
+            </a>
           </div>
         </div>
       </nav>
@@ -63,14 +65,18 @@ const DedicatedHealthLanding = () => {
                 endless waits, or confusing communications between specialists.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Book Your Consultation
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary text-lg px-8">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call Now: (555) 123-4567
-                </Button>
+                <a href="https://outlook.office.com/bookwithme/user/0be1f2c1fa2b4c2dae14f69885cc536c@liberatehc.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8">
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Book Your Consultation
+                  </Button>
+                </a>
+                <a href="tel:415-419-1219">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 hover:text-white text-lg px-8">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call Now: (415) 419-1219
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="lg:order-last">
@@ -311,7 +317,7 @@ const DedicatedHealthLanding = () => {
                   <CardTitle>Phone</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-2xl font-bold text-primary mb-2">(555) 123-4567</p>
+                  <p className="text-2xl font-bold text-primary mb-2">(415) 419-1219</p>
                   <p className="text-sm text-muted-foreground">Available 24/7 for patients</p>
                 </CardContent>
               </Card>
@@ -372,14 +378,18 @@ const DedicatedHealthLanding = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Book Consultation
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Phone className="mr-2 h-5 w-5" />
-                  Call to Learn More
-                </Button>
+                <a href="https://outlook.office.com/bookwithme/user/0be1f2c1fa2b4c2dae14f69885cc536c@liberatehc.com?anonymous&ismsaljsauthenabled&ep=plink" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Book Consultation
+                  </Button>
+                </a>
+                <a href="tel:415-419-1219">
+                  <Button size="lg" variant="outline" className="text-lg px-8">
+                    <Phone className="mr-2 h-5 w-5" />
+                    Call to Learn More
+                  </Button>
+                </a>
               </div>
 
               <div className="bg-muted/50 rounded-lg p-6 max-w-md mx-auto">
